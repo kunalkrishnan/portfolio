@@ -136,6 +136,19 @@ border-radius:10px;
 margin-bottom:20px;
 }
 
+#clients .card{
+background:rgba(30,41,59,0.9);
+padding:25px;
+border-radius:10px;
+margin-bottom:25px;
+transition:0.3s;
+}
+
+#clients .card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
 /* ARCHITECTURE PIPELINE */
 
 .pipeline{
