@@ -5,105 +5,36 @@
 
 <title>Kunal Krishnan | Data Engineer</title>
 
+<link rel="stylesheet" href="style.css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-
-body{
-margin:0;
-font-family:Segoe UI, Arial;
-background:#0f172a;
-color:white;
-}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:20px;
-color:#cbd5f5;
-}
-
-.button{
-margin-top:25px;
-padding:12px 24px;
-background:#2563eb;
-color:white;
-border-radius:6px;
-text-decoration:none;
-}
-
-section{
-max-width:1000px;
-margin:auto;
-padding:80px 20px;
-}
-
-h2{
-font-size:32px;
-margin-bottom:30px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:10px;
-margin-bottom:20px;
-}
-
-.skills span{
-display:inline-block;
-background:#2563eb;
-padding:8px 14px;
-border-radius:6px;
-margin:6px;
-font-size:14px;
-}
-
-.project-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-}
-
-.project{
-background:#1e293b;
-padding:25px;
-border-radius:10px;
-}
-
-footer{
-text-align:center;
-padding:40px;
-background:#020617;
-}
-
-a{
-color:#38bdf8;
-text-decoration:none;
-}
-
-</style>
 
 </head>
 
 <body>
 
+<nav>
+
+<h2>Kunal Krishnan</h2>
+
+<div>
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#research">Research</a>
+<a href="#quiz">Quiz</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
 <!-- HERO -->
 
-<div class="hero">
+<section class="hero">
+
+<img src="assets/kunal.jpg" class="profile">
 
 <h1>Kunal Krishnan</h1>
 
@@ -111,36 +42,33 @@ text-decoration:none;
 
 <p>Consultant at Capgemini | Ex-Infosys | 5+ Years Experience</p>
 
-<a class="button" href="#projects">View My Work</a>
+<div class="buttons">
 
-</div>
+<a href="assets/resume.pdf" download class="btn">Download Resume</a>
 
-
-<!-- ABOUT -->
-
-<section>
-
-<h2>About Me</h2>
-
-<div class="card">
-
-<p>
-
-Data Engineer with 5+ years of experience designing scalable cloud
-data platforms and enterprise data pipelines.
-
-Currently working as a Consultant at Capgemini delivering enterprise
-data engineering solutions including migration, replication, and analytics platforms.
-
-Previously worked at Infosys building Azure based data platforms
-for global clients.
-
-</p>
+<a href="mailto:your-email@gmail.com" class="btn">Email Me</a>
 
 </div>
 
 </section>
 
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+Data Engineer with expertise in building scalable cloud data
+platforms and enterprise analytics solutions.
+
+Experienced in designing end-to-end data pipelines,
+migration architectures and modern lakehouse platforms.
+
+</p>
+
+</section>
 
 <!-- CLIENT EXPERIENCE -->
 
@@ -152,8 +80,8 @@ for global clients.
 
 <h3>FedEx</h3>
 
-<p>Built Azure data pipelines using Azure Data Factory,
-Databricks and Delta Lake for large scale data analytics.</p>
+Designed Azure based enterprise data pipelines and
+analytics platforms.
 
 </div>
 
@@ -161,8 +89,8 @@ Databricks and Delta Lake for large scale data analytics.</p>
 
 <h3>CSX</h3>
 
-<p>Developed distributed PySpark pipelines for enterprise data
-processing and reporting platforms.</p>
+Developed distributed PySpark pipelines for large scale
+transportation data analytics.
 
 </div>
 
@@ -170,45 +98,38 @@ processing and reporting platforms.</p>
 
 <h3>Baker Hughes</h3>
 
-<p>Working on enterprise data replication using HVR/Fivetran
-and building modern cloud data platforms.</p>
+Working on enterprise data replication using Fivetran HVR.
 
 </div>
 
 </section>
 
-
 <!-- SKILLS -->
 
-<section>
+<section id="skills">
 
-<h2>Technical Skills</h2>
+<h2>Skills</h2>
 
 <div class="skills">
 
 <span>Azure Data Factory</span>
 <span>Azure Databricks</span>
 <span>PySpark</span>
-<span>SQL</span>
 <span>Delta Lake</span>
+<span>SQL</span>
 <span>Azure Synapse</span>
-<span>Microsoft Fabric</span>
-<span>Fivetran</span>
-<span>HVR Replication</span>
 <span>Power BI</span>
+<span>Microsoft Fabric</span>
 
 </div>
 
 </section>
 
-
 <!-- PROJECTS -->
 
 <section id="projects">
 
-<h2>Featured Projects</h2>
-
-<div class="project-grid">
+<h2>Projects</h2>
 
 <div class="project">
 
@@ -216,15 +137,12 @@ and building modern cloud data platforms.</p>
 
 <p>
 
-End-to-end migration pipeline implementing
-Bronze, Silver and Gold architecture using Delta Lake,
-incremental loads and performance optimization.
+Enterprise migration pipeline implementing Bronze,
+Silver and Gold architecture.
 
 </p>
 
-<a href="https://github.com/kunalkrishnan/oracle-to-adls-medallion-migration">
-View Project
-</a>
+<a href="https://github.com/kunalkrishnan/oracle-to-adls-medallion-migration">View Project</a>
 
 </div>
 
@@ -234,46 +152,84 @@ View Project
 
 <p>
 
-Enterprise scale data pipeline using Azure Data Factory,
-Databricks, Delta Lake and Synapse analytics.
+End-to-end Azure data pipeline using Databricks,
+ADF and Synapse.
 
 </p>
 
-<a href="https://github.com/kunalkrishnan/azure-data-engineering-platform">
-View Project
-</a>
-
-</div>
+<a href="https://github.com/kunalkrishnan/azure-data-engineering-platform">View Project</a>
 
 </div>
 
 </section>
 
+<!-- RESEARCH -->
 
-<!-- CONTACT -->
+<section id="research">
+
+<h2>Research & Papers</h2>
+
+<div class="card">
+
+Modern Data Engineering Architectures
+
+Topics:
+
+Delta Lake optimization  
+Medallion architecture  
+Cloud data migration
+
+</div>
+
+</section>
+
+<!-- QUIZ -->
+
+<section id="quiz">
+
+<h2>Daily Data Engineering Quiz</h2>
+
+<div class="quiz">
+
+<p id="question"></p>
+
+<button onclick="showAnswer()">Show Answer</button>
+
+<p id="answer"></p>
+
+</div>
+
+</section>
+
+<!-- PASSION -->
 
 <section>
 
-<h2>Contact</h2>
+<h2>Passion & Interests</h2>
 
-<div class="card">
+<p>
+
+Cloud computing, distributed systems,
+data architecture design and mentoring
+new data engineers.
+
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
 
 <p>Email: your-email@gmail.com</p>
 
 <p>GitHub: github.com/kunalkrishnan</p>
 
-<p>LinkedIn: linkedin.com/in/your-linkedin</p>
-
-</div>
-
 </section>
 
-
-<footer>
-
-<p>© 2026 Kunal Krishnan</p>
-
-</footer>
+<script src="script.js"></script>
 
 </body>
 
