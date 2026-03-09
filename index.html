@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>Kunal Krishnan | Data Engineer</title>
@@ -9,60 +10,89 @@
 <style>
 
 body{
-font-family:Arial;
 margin:0;
+font-family:Segoe UI, Arial;
 background:#0f172a;
 color:white;
 }
 
-header{
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:60px;
-background:#020617;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
 }
 
-header h1{
-font-size:42px;
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+color:#cbd5f5;
+}
+
+.button{
+margin-top:25px;
+padding:12px 24px;
+background:#2563eb;
+color:white;
+border-radius:6px;
+text-decoration:none;
 }
 
 section{
 max-width:1000px;
 margin:auto;
-padding:40px;
+padding:80px 20px;
+}
+
+h2{
+font-size:32px;
+margin-bottom:30px;
 }
 
 .card{
 background:#1e293b;
 padding:25px;
 border-radius:10px;
-margin:20px 0;
+margin-bottom:20px;
 }
 
 .skills span{
 display:inline-block;
 background:#2563eb;
-padding:8px 12px;
-margin:5px;
+padding:8px 14px;
 border-radius:6px;
+margin:6px;
+font-size:14px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
 }
 
 .project{
 background:#1e293b;
-padding:20px;
-margin:20px 0;
+padding:25px;
 border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
 }
 
 a{
 color:#38bdf8;
 text-decoration:none;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
-margin-top:40px;
 }
 
 </style>
@@ -71,15 +101,22 @@ margin-top:40px;
 
 <body>
 
-<header>
+<!-- HERO -->
+
+<div class="hero">
 
 <h1>Kunal Krishnan</h1>
 
-<p>Data Engineer | Azure | Databricks | PySpark</p>
+<p>Azure Data Engineer | Databricks | PySpark</p>
 
 <p>Consultant at Capgemini | Ex-Infosys | 5+ Years Experience</p>
 
-</header>
+<a class="button" href="#projects">View My Work</a>
+
+</div>
+
+
+<!-- ABOUT -->
 
 <section>
 
@@ -88,19 +125,24 @@ margin-top:40px;
 <div class="card">
 
 <p>
-Data Engineer with 5+ years of experience designing and building
-scalable cloud data platforms and enterprise ETL pipelines.
 
-Currently working as a Consultant at Capgemini delivering
-large scale data migration and replication solutions.
+Data Engineer with 5+ years of experience designing scalable cloud
+data platforms and enterprise data pipelines.
 
-Previously worked at Infosys building enterprise Azure data platforms
+Currently working as a Consultant at Capgemini delivering enterprise
+data engineering solutions including migration, replication, and analytics platforms.
+
+Previously worked at Infosys building Azure based data platforms
 for global clients.
+
 </p>
 
 </div>
 
 </section>
+
+
+<!-- CLIENT EXPERIENCE -->
 
 <section>
 
@@ -110,21 +152,17 @@ for global clients.
 
 <h3>FedEx</h3>
 
-<p>
-Designed Azure based ETL pipelines and data lake architecture
-using Azure Data Factory, Databricks and Delta Lake.
-</p>
+<p>Built Azure data pipelines using Azure Data Factory,
+Databricks and Delta Lake for large scale data analytics.</p>
 
 </div>
 
 <div class="card">
 
-<h3>CSX Corporation</h3>
+<h3>CSX</h3>
 
-<p>
-Built scalable data processing pipelines using PySpark and
-Azure Databricks for enterprise analytics workloads.
-</p>
+<p>Developed distributed PySpark pipelines for enterprise data
+processing and reporting platforms.</p>
 
 </div>
 
@@ -132,70 +170,56 @@ Azure Databricks for enterprise analytics workloads.
 
 <h3>Baker Hughes</h3>
 
-<p>
-Working on enterprise data replication using HVR/Fivetran
-and building modern cloud data platform solutions.
-</p>
+<p>Working on enterprise data replication using HVR/Fivetran
+and building modern cloud data platforms.</p>
 
 </div>
 
 </section>
 
-<section>
 
-<h2>End-to-End Data Migration Expertise</h2>
-
-<div class="card skills">
-
-<span>Legacy Data Migration</span>
-<span>Oracle to ADLS Gen2</span>
-<span>Azure Data Factory</span>
-<span>Azure Databricks</span>
-<span>Delta Lake</span>
-<span>Medallion Architecture</span>
-<span>Incremental ETL Pipelines</span>
-<span>Data Replication</span>
-<span>Fivetran</span>
-<span>HVR Replication</span>
-<span>Microsoft Fabric</span>
-<span>Azure Synapse</span>
-
-</div>
-
-</section>
+<!-- SKILLS -->
 
 <section>
 
 <h2>Technical Skills</h2>
 
-<div class="card skills">
+<div class="skills">
 
-<span>Python</span>
-<span>PySpark</span>
-<span>SQL</span>
 <span>Azure Data Factory</span>
 <span>Azure Databricks</span>
-<span>Azure Data Lake</span>
+<span>PySpark</span>
+<span>SQL</span>
 <span>Delta Lake</span>
-<span>Git</span>
+<span>Azure Synapse</span>
+<span>Microsoft Fabric</span>
+<span>Fivetran</span>
+<span>HVR Replication</span>
 <span>Power BI</span>
 
 </div>
 
 </section>
 
-<section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
 
 <h2>Featured Projects</h2>
 
+<div class="project-grid">
+
 <div class="project">
 
-<h3>Oracle to ADLS Gen2 Medallion Migration</h3>
+<h3>Oracle → ADLS Medallion Migration</h3>
 
 <p>
-End-to-end legacy migration project implementing
-Bronze, Silver and Gold layers using Delta Lake
-with incremental loads and performance optimization.
+
+End-to-end migration pipeline implementing
+Bronze, Silver and Gold architecture using Delta Lake,
+incremental loads and performance optimization.
+
 </p>
 
 <a href="https://github.com/kunalkrishnan/oracle-to-adls-medallion-migration">
@@ -209,8 +233,10 @@ View Project
 <h3>Azure Data Engineering Platform</h3>
 
 <p>
+
 Enterprise scale data pipeline using Azure Data Factory,
 Databricks, Delta Lake and Synapse analytics.
+
 </p>
 
 <a href="https://github.com/kunalkrishnan/azure-data-engineering-platform">
@@ -219,7 +245,12 @@ View Project
 
 </div>
 
+</div>
+
 </section>
+
+
+<!-- CONTACT -->
 
 <section>
 
@@ -237,6 +268,7 @@ View Project
 
 </section>
 
+
 <footer>
 
 <p>© 2026 Kunal Krishnan</p>
@@ -244,4 +276,5 @@ View Project
 </footer>
 
 </body>
+
 </html>
