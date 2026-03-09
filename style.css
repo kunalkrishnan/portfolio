@@ -1,11 +1,16 @@
 body{
 margin:0;
 font-family:Segoe UI;
-background:#0f172a;
 color:white;
-overflow-x:hidden;
-}
 
+background-image:
+linear-gradient(rgba(10,10,20,0.85), rgba(10,10,20,0.85)),
+url("assets/data-engineering-bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
 nav{
 display:flex;
 justify-content:space-between;
