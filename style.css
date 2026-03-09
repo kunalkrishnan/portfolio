@@ -1,6 +1,8 @@
+/* GENERAL */
+
 body{
 margin:0;
-font-family:Segoe UI;
+font-family:Segoe UI, Arial;
 color:white;
 
 background:
@@ -12,14 +14,22 @@ background-position:center;
 background-attachment:fixed;
 }
 
+/* NAVBAR */
+
 nav{
 display:flex;
 justify-content:space-between;
-padding:20px;
+align-items:center;
+padding:20px 40px;
 background:#020617;
 position:sticky;
 top:0;
-z-index:10;
+z-index:1000;
+}
+
+nav h2{
+margin:0;
+font-size:22px;
 }
 
 nav a{
@@ -27,29 +37,58 @@ color:white;
 text-decoration:none;
 margin-left:20px;
 font-weight:500;
+transition:0.3s;
 }
+
+nav a:hover{
+color:#3b82f6;
+}
+
+/* HERO */
 
 .hero{
 text-align:center;
 padding:140px 20px;
 }
 
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.9;
+}
+
+/* PROFILE IMAGE */
+
 .profile{
-width:160px;
+width:170px;
 border-radius:50%;
 border:4px solid #3b82f6;
 margin-bottom:20px;
 }
 
+/* BUTTONS */
+
 .btn{
 background:#2563eb;
-padding:12px 22px;
+padding:12px 24px;
 color:white;
 text-decoration:none;
 border-radius:6px;
 margin:10px;
 display:inline-block;
+transition:0.3s;
 }
+
+.btn:hover{
+background:#1d4ed8;
+transform:translateY(-2px);
+}
+
+/* SECTIONS */
 
 section{
 max-width:1100px;
@@ -57,13 +96,18 @@ margin:auto;
 padding:70px 20px;
 }
 
+/* SKILLS */
+
 .skills span{
 display:inline-block;
 background:#2563eb;
 padding:8px 14px;
 margin:6px;
 border-radius:6px;
+font-size:14px;
 }
+
+/* PROJECT CARDS */
 
 .project{
 background:rgba(30,41,59,0.85);
@@ -78,12 +122,21 @@ transform:translateY(-6px);
 box-shadow:0 15px 30px rgba(0,0,0,0.6);
 }
 
+.project a{
+color:#3b82f6;
+text-decoration:none;
+}
+
+/* GENERIC CARD */
+
 .card{
 background:rgba(30,41,59,0.85);
 padding:25px;
 border-radius:10px;
 margin-bottom:20px;
 }
+
+/* ARCHITECTURE PIPELINE */
 
 .pipeline{
 display:flex;
@@ -98,11 +151,57 @@ background:#2563eb;
 padding:15px 20px;
 border-radius:8px;
 font-weight:bold;
+transition:0.3s;
 }
+
+.node:hover{
+background:#1d4ed8;
+transform:scale(1.05);
+}
+
+/* QUIZ */
 
 .quiz{
 background:rgba(30,41,59,0.85);
 padding:25px;
 border-radius:10px;
 text-align:center;
+}
+
+.quiz button{
+background:#2563eb;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.quiz button:hover{
+background:#1d4ed8;
+}
+
+/* GITHUB IMAGE */
+
+img{
+max-width:100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav a{
+margin:10px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
 }
