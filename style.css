@@ -1,1 +1,70 @@
+body{
+margin:0;
+font-family:Segoe UI;
+background:#0f172a;
+color:white;
+}
 
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav a{
+margin-left:20px;
+color:white;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(135deg,#1e3a8a,#020617);
+}
+
+.profile{
+width:150px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+.btn{
+background:#2563eb;
+padding:10px 20px;
+color:white;
+text-decoration:none;
+margin:10px;
+border-radius:5px;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.skills span{
+display:inline-block;
+background:#2563eb;
+padding:8px 12px;
+margin:5px;
+border-radius:5px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
