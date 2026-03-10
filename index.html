@@ -197,13 +197,68 @@ using Fivetran HVR and Azure Data Factory.
 
 </section>
 
-<!-- LIVE PIPELINE SIMULATOR -->
-
-<section>
-
 <h2>Live Data Pipeline Simulation</h2>
 
-<canvas id="pipelineCanvas"></canvas>
+<div class="etl-pipeline">
+
+<div class="etl-node">
+<img src="assets/oracle.png">
+<p>Oracle DB</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="etl-node">
+<img src="assets/sqlserver.png">
+<p>SQL Server</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="etl-node">
+<img src="assets/api.png">
+<p>REST API</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="etl-node">
+<img src="assets/adf.png">
+<p>Azure Data Factory</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="etl-node">
+<img src="assets/adls.png">
+<p>ADLS Gen2</p>
+<span class="layer bronze">Bronze</span>
+<span class="layer silver">Silver</span>
+<span class="layer gold">Gold</span>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="etl-node">
+<img src="assets/databricks.png">
+<p>Databricks Notebook</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="etl-node">
+<img src="assets/synapse.png">
+<p>Azure Synapse</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="etl-node">
+<img src="assets/powerbi.png">
+<p>Power BI</p>
+</div>
+
+</div>
 
 </section>
 
