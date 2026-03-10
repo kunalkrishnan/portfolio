@@ -30,6 +30,106 @@ a: "Azure Data Lake Storage Gen2."
 {
 q: "Which compute engine powers Azure Databricks?",
 a: "Apache Spark."
+},
+
+{
+q: "What does Z-Order optimization do in Delta Lake?",
+a: "It clusters related data together to improve query performance."
+},
+
+{
+q: "What is Medallion Architecture?",
+a: "A data design pattern with Bronze, Silver and Gold layers for data refinement."
+},
+
+{
+q: "What is the Bronze layer in a data lake?",
+a: "It stores raw ingested data from source systems."
+},
+
+{
+q: "What is the Silver layer responsible for?",
+a: "Cleaning, deduplicating and transforming raw data."
+},
+
+{
+q: "What is the Gold layer used for?",
+a: "Serving business-ready datasets for analytics and reporting."
+},
+
+{
+q: "Which Azure service is used for orchestrating ETL pipelines?",
+a: "Azure Data Factory."
+},
+
+{
+q: "What is Azure Data Lake Storage Gen2?",
+a: "A scalable cloud storage service optimized for big data analytics workloads."
+},
+
+{
+q: "Which engine powers Azure Databricks?",
+a: "Apache Spark."
+},
+
+{
+q: "What is Delta Lake?",
+a: "An open-source storage layer that brings ACID transactions to data lakes."
+},
+
+{
+q: "What does VACUUM command do in Delta Lake?",
+a: "It removes old data files that are no longer needed."
+},
+
+{
+q: "What is partitioning in big data systems?",
+a: "Dividing data into smaller pieces to improve query performance."
+},
+
+{
+q: "What is PySpark?",
+a: "The Python API for Apache Spark used for distributed data processing."
+},
+
+{
+q: "What is a Data Lakehouse?",
+a: "A modern architecture combining the flexibility of data lakes with the performance of data warehouses."
+},
+
+{
+q: "What is incremental data loading?",
+a: "Loading only new or changed data instead of full datasets."
+},
+
+{
+q: "What does MERGE INTO do in Delta Lake?",
+a: "It performs upsert operations combining insert and update logic."
+},
+
+{
+q: "What is data deduplication?",
+a: "The process of removing duplicate records from datasets."
+},
+
+{
+q: "Which visualization tool integrates well with Azure data platforms?",
+a: "Power BI."
+},
+
+{
+q: "What is schema enforcement in Delta Lake?",
+a: "Ensuring incoming data matches the table schema."
+},
+
+{
+q: "What is data orchestration?",
+a: "The automated coordination and management of data workflows."
+},
+
+{
+q: "What is a data pipeline?",
+a: "A sequence of processes that move and transform data from source to destination."
 }
 
 ];
@@ -313,3 +413,29 @@ requestAnimationFrame(draw);
 draw();
 
 }
+
+// ============================
+// BACKGROUND IMAGE ROTATOR
+// ============================
+
+const backgrounds = [
+"assets/bg1.jpg",
+"assets/bg2.jpg",
+"assets/bg3.jpg",
+"assets/bg4.jpg"
+];
+
+let bgIndex = 0;
+
+setInterval(() => {
+
+bgIndex++;
+
+if(bgIndex >= backgrounds.length){
+bgIndex = 0;
+}
+
+document.body.style.backgroundImage =
+`linear-gradient(rgba(8,10,30,0.9), rgba(8,10,30,0.9)), url(${backgrounds[bgIndex]})`;
+
+}, 6000);
