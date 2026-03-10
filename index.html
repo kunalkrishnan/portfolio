@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Kunal Krishnan | Data Engineer</title>
+<title>Kunal Krishnan | Azure Data Engineer</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +13,9 @@
 
 <body>
 
+<!-- PARTICLE BACKGROUND -->
+<div id="particles"></div>
+
 <nav>
 
 <h2>Kunal Krishnan</h2>
@@ -20,10 +23,11 @@
 <div>
 
 <a href="#about">About</a>
+<a href="#clients">Clients</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#architecture">Architecture</a>
-<a href="#timeline">Career</a>
+<a href="#blog">Blog</a>
 <a href="#contact">Contact</a>
 
 </div>
@@ -38,7 +42,7 @@
 
 <h1>Kunal Krishnan</h1>
 
-<p>Azure Data Engineer | Databricks | PySpark</p>
+<h2 class="typing"></h2>
 
 <p>Consultant at Capgemini | Ex-Infosys | 5+ Years Experience</p>
 
@@ -56,7 +60,6 @@
 
 </section>
 
-
 <!-- ABOUT -->
 
 <section id="about">
@@ -65,17 +68,15 @@
 
 <p>
 
-Data Engineer with over 5 years of experience building scalable cloud
-data platforms and enterprise analytics pipelines.
-
-Specialized in Azure Data Factory, Azure Databricks, PySpark, Delta Lake
-and modern Lakehouse architecture.
-
-Worked with global clients including FedEx, CSX and Baker Hughes.
+Azure Data Engineer with 5+ years experience designing scalable cloud
+data platforms and enterprise ETL pipelines using Azure Data Factory,
+Databricks, PySpark and Delta Lake.
 
 </p>
 
 </section>
+
+<!-- CLIENTS -->
 
 <section id="clients">
 
@@ -85,13 +86,7 @@ Worked with global clients including FedEx, CSX and Baker Hughes.
 
 <h3>FedEx Express Europe</h3>
 
-<p>
-Worked on data engineering solutions supporting the modernization
-of the European Road Network connecting 700+ stations across 45 countries
-with nearly 50,000 weekly logistics movements.
-</p>
-
-<p><b>Technologies:</b> Azure Data Factory, Databricks, PySpark, Delta Lake</p>
+<p>Modernizing logistics data pipelines across 45 countries.</p>
 
 </div>
 
@@ -99,12 +94,7 @@ with nearly 50,000 weekly logistics movements.
 
 <h3>CSX Transportation</h3>
 
-<p>
-Built distributed data pipelines processing large-scale railway
-logistics and operational data for analytics and reporting.
-</p>
-
-<p><b>Technologies:</b> Azure Data Factory, PySpark, Databricks, SQL</p>
+<p>Built distributed railway analytics data pipelines.</p>
 
 </div>
 
@@ -112,17 +102,11 @@ logistics and operational data for analytics and reporting.
 
 <h3>Baker Hughes</h3>
 
-<p>
-Currently implementing enterprise data replication using
-Fivetran HVR and designing modern cloud analytics platforms.
-</p>
-
-<p><b>Technologies:</b> Fivetran HVR, Azure Data Factory, Databricks</p>
+<p>Enterprise data replication and cloud analytics platform.</p>
 
 </div>
 
 </section>
-
 
 <!-- SKILLS -->
 
@@ -132,36 +116,17 @@ Fivetran HVR and designing modern cloud analytics platforms.
 
 <div class="skills">
 
-<span>Azure Data Factory</span>
-<span>Azure Databricks</span>
-<span>PySpark</span>
-<span>SQL</span>
-<span>Delta Lake</span>
-<span>Azure Data Lake</span>
-<span>Azure Synapse</span>
-<span>Microsoft Fabric</span>
-<span>Fivetran</span>
-<span>HVR Replication</span>
-<span>Power BI</span>
+<a href="https://learn.microsoft.com/en-us/azure/data-factory/" target="_blank">Azure Data Factory</a>
+
+<a href="https://learn.microsoft.com/en-us/azure/databricks/" target="_blank">Databricks</a>
+
+<a href="https://delta.io/" target="_blank">Delta Lake</a>
+
+<a href="https://learn.microsoft.com/en-us/power-bi/" target="_blank">Power BI</a>
+
+<a href="https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction" target="_blank">ADLS Gen2</a>
 
 </div>
-
-</section>
-
-<section>
-
-<h2>Technology Stack</h2>
-
-<p style="text-align:center">
-
-☁ Azure Data Factory  
-⚡ Azure Databricks  
-📦 Delta Lake  
-🗄 Azure Data Lake Gen2  
-📊 Power BI  
-🔁 Fivetran / HVR  
-
-</p>
 
 </section>
 
@@ -175,111 +140,105 @@ Fivetran HVR and designing modern cloud analytics platforms.
 
 <h3>Oracle → ADLS Medallion Migration</h3>
 
-<p>
+<p>Enterprise migration implementing Bronze, Silver, Gold architecture.</p>
 
-Enterprise data migration pipeline implementing Bronze,
-Silver and Gold architecture using Delta Lake.
-
-</p>
-
-<a href="https://github.com/kunalkrishnan/oracle-to-adls-medallion-migration">
-
-View Project
-
-</a>
+<a href="https://github.com/kunalkrishnan/oracle-to-adls-medallion-migration" target="_blank">View Project</a>
 
 </div>
-
 
 <div class="project">
 
 <h3>Azure Data Engineering Platform</h3>
 
-<p>
+<p>ADF → Databricks → Delta Lake → Synapse → Power BI</p>
 
-End-to-end Azure data platform using Data Factory,
-Databricks, Delta Lake and Synapse.
-
-</p>
-
-<a href="https://github.com/kunalkrishnan/azure-data-engineering-platform">
-
-View Project
-
-</a>
+<a href="https://github.com/kunalkrishnan/azure-data-engineering-platform" target="_blank">View Project</a>
 
 </div>
 
 </section>
+
+<!-- ARCHITECTURE PIPELINE -->
+
 <section id="architecture">
 
-<h2>Modern Data Platform Architecture</h2>
+<h2>Data Engineering Pipeline</h2>
 
 <div class="pipeline">
 
-<div class="node">Oracle DB</div>
-
-<div class="node">Azure Data Factory</div>
-
-<div class="node">ADLS Gen2</div>
-
+<div class="node">Oracle</div>
+<div class="node">ADF</div>
+<div class="node">ADLS</div>
 <div class="node">Databricks</div>
-
-<div class="node">Delta Lake</div>
-
-<div class="node">Synapse Analytics</div>
-
+<div class="node">Delta</div>
+<div class="node">Synapse</div>
 <div class="node">Power BI</div>
 
 </div>
 
-<p style="text-align:center;margin-top:20px">
+</section>
 
-Typical Lakehouse architecture used for enterprise analytics.
+<!-- LIVE PIPELINE SIMULATOR -->
 
-</p>
+<section>
+
+<h2>Live Data Pipeline Simulation</h2>
+
+<canvas id="pipelineCanvas"></canvas>
 
 </section>
 
-<!-- CAREER -->
+<!-- ARCHITECTURE IMAGE ROTATOR -->
 
-<section id="timeline">
+<section>
 
-<h2>Career Timeline</h2>
+<h2>Cloud Data Architecture</h2>
 
-<div class="card">
+<img id="architectureImage" src="assets/bg1.jpg" width="100%">
 
-<b>2015 – 2019</b>
+</section>
 
-<p>BE Electronics & Communication Engineering  
-UIET Panjab University, Chandigarh</p>
+<!-- BLOG -->
+
+<section id="blog">
+
+<h2>Data Engineering Articles</h2>
+
+<div class="blog-container">
+
+<div class="blog-card">
+
+<h3>Medallion Architecture</h3>
+
+<p>Understanding Bronze, Silver and Gold layers.</p>
+
+<a href="blogs/medallion.html">Read Article</a>
 
 </div>
 
+<div class="blog-card">
 
-<div class="card">
+<h3>Delta Lake Optimization</h3>
 
-<b>2019 – 2023</b>
+<p>Partitioning, Z-Order and performance tuning.</p>
 
-<p>Data Engineer – Infosys</p>
-
-<p>Clients: FedEx, CSX</p>
+<a href="blogs/delta.html">Read Article</a>
 
 </div>
 
+<div class="blog-card">
 
-<div class="card">
+<h3>ADF Pipeline Design</h3>
 
-<b>2023 – Present</b>
+<p>Building scalable Azure Data Factory pipelines.</p>
 
-<p>Consultant Data Engineer – Capgemini</p>
+<a href="blogs/adf.html">Read Article</a>
 
-<p>Client: Baker Hughes</p>
+</div>
 
 </div>
 
 </section>
-
 
 <!-- GITHUB -->
 
@@ -289,20 +248,19 @@ UIET Panjab University, Chandigarh</p>
 
 <img src="https://github-readme-stats.vercel.app/api?username=kunalkrishnan&show_icons=true&theme=tokyonight">
 
-</section>
-
-<section>
-
-<h2>GitHub Activity</h2>
-
-<img src="https://github-readme-stats.vercel.app/api?username=kunalkrishnan&show_icons=true&theme=tokyonight">
-
 <br><br>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=kunalkrishnan&theme=tokyonight">
 
 </section>
 
+<section>
+
+<h2>GitHub Activity</h2>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=kunalkrishnan&theme=tokyo-night">
+
+</section>
 
 <!-- QUIZ -->
 
@@ -322,7 +280,6 @@ UIET Panjab University, Chandigarh</p>
 
 </section>
 
-
 <!-- CONTACT -->
 
 <section id="contact">
@@ -331,28 +288,29 @@ UIET Panjab University, Chandigarh</p>
 
 <div class="card">
 
-<p><b>Email:</b> kunalkrishnan966@gmail.com</p>
+<p>Email: kunalkrishnan966@gmail.com</p>
 
-<p><b>Phone:</b> +91 9914182048</p>
+<p>Phone: +91 9914182048</p>
 
-<p><b>Location:</b> Samastipur, Bihar, India</p>
-
-<p>
-
-<b>LinkedIn:</b>
-
-<a href="https://www.linkedin.com/in/kunal-krishnan-a0a792137/" target="_blank">
-
-linkedin.com/in/kunal-krishnan-a0a792137
-
-</a>
-
-</p>
+<p>Location: Samastipur, Bihar</p>
 
 </div>
 
 </section>
 
+<!-- AI CHATBOT -->
+
+<div id="ai-chatbot">
+
+<h3>Data Engineering Assistant</h3>
+
+<div id="chat-box"></div>
+
+<input id="chat-input" placeholder="Ask about data engineering">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
 
 <script src="script.js"></script>
 
