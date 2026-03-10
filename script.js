@@ -259,44 +259,34 @@ section.style.transition = "all 0.6s ease";
 observer.observe(section);
 
 });
+/* =========================
+ARCHITECTURE IMAGE ROTATOR
+========================= */
 
-
-
-// ============================
-// ARCHITECTURE IMAGE ROTATOR
-// ============================
-
-const images = [
+const architectureImages = [
 "assets/bg1.jpeg",
 "assets/bg2.jpeg",
 "assets/bg3.jpeg",
 "assets/bg4.jpeg"
 ];
 
-let imgIndex = 0;
+let architectureIndex = 0;
 
 setInterval(function(){
 
 const img = document.getElementById("architectureImage");
 
-if(img){
+if(!img) return;
 
-img.src = images[imgIndex];
+architectureIndex++;
 
-imgIndex++;
-
-if(imgIndex >= images.length){
-
-imgIndex = 0;
-
+if(architectureIndex >= architectureImages.length){
+architectureIndex = 0;
 }
 
-}
+img.src = architectureImages[architectureIndex];
 
-},5000);
-
-
-
+}, 4000); // change every 4 seconds
 // ============================
 // AI CHATBOT
 // ============================
