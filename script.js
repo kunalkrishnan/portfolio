@@ -439,3 +439,36 @@ toggleBtn.innerHTML = "+";
 }
 
 });
+
+/* =========================
+ARCHITECTURE IMAGE ROTATOR
+========================= */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const images = [
+"assets/bg1.jpeg",
+"assets/bg2.jpeg",
+"assets/bg3.jpeg",
+"assets/bg4.jpeg"
+];
+
+let index = 0;
+
+const img = document.getElementById("architectureImage");
+
+if(!img) return;
+
+setInterval(function(){
+
+index++;
+
+if(index >= images.length){
+index = 0;
+}
+
+img.src = images[index];
+
+}, 4000);
+
+});
