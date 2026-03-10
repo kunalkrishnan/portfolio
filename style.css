@@ -468,3 +468,26 @@ transition:transform 0.4s ease;
 #architectureImage:hover{
 transform:scale(1.03);
 }
+
+/* =========================
+TYPING EFFECT FIX
+========================= */
+
+.typing{
+font-size:24px;
+font-weight:500;
+display:inline-block;
+}
+
+.typing::after{
+content:"|";
+margin-left:5px;
+color:#60a5fa;
+animation:blink 1s infinite;
+}
+
+@keyframes blink{
+0%{opacity:1;}
+50%{opacity:0;}
+100%{opacity:1;}
+}
