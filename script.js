@@ -204,19 +204,26 @@ typeEffect();
 // SMOOTH SCROLL NAVIGATION
 // ============================
 
-document.querySelectorAll("nav a").forEach(anchor=>{
+document.addEventListener("DOMContentLoaded", function () {
 
-anchor.addEventListener("click",function(e){
+const toggleBtn = document.getElementById("chatbot-toggle");
+const chatbotBody = document.getElementById("chatbot-body");
 
-e.preventDefault();
+if(toggleBtn){
 
-document.querySelector(this.getAttribute("href")).scrollIntoView({
+toggleBtn.addEventListener("click", function(){
 
-behavior:"smooth"
+if(chatbotBody.style.display === "none"){
+chatbotBody.style.display = "flex";
+toggleBtn.innerHTML = "—";
+}else{
+chatbotBody.style.display = "none";
+toggleBtn.innerHTML = "+";
+}
 
 });
 
-});
+}
 
 });
 
