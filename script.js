@@ -424,3 +424,21 @@ document.body.style.backgroundImage =
 `linear-gradient(rgba(8,10,30,0.9), rgba(8,10,30,0.9)), url(${backgrounds[bgIndex]})`;
 
 }, 6000);
+const toggleBtn = document.getElementById("chatbot-toggle");
+const chatbotBody = document.getElementById("chatbot-body");
+
+toggleBtn.addEventListener("click", () => {
+
+if(chatbotBody.style.display === "none"){
+
+chatbotBody.style.display = "flex";
+toggleBtn.innerHTML = "—";
+
+}else{
+
+chatbotBody.style.display = "none";
+toggleBtn.innerHTML = "+";
+
+}
+
+});
