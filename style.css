@@ -329,12 +329,12 @@ transform:scale(1.1);
 }
 
 #architectureImage{
-width:900px;
-max-width:95%;
+width:650px;
+max-width:90%;
 height:auto;
 border-radius:12px;
 box-shadow:0 10px 40px rgba(0,0,0,0.5);
-transition:opacity 1s ease-in-out;
+transition:opacity 1s ease;
 }
 
 /* =========================
