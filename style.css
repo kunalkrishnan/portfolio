@@ -383,41 +383,64 @@ border-radius:8px;
 }
 
 /* =========================
-CHATBOT (optional)
+AI CHATBOT
 ========================= */
 
-.chatbot{
-
+#ai-chatbot{
 position:fixed;
+bottom:25px;
+right:25px;
 
-bottom:20px;
+width:320px;
+height:420px;
 
-right:20px;
+background:rgba(15,23,42,0.95);
 
-width:300px;
+border-radius:16px;
 
-background:#0f172a;
+box-shadow:0 15px 40px rgba(0,0,0,0.8);
 
-border-radius:10px;
+display:flex;
+flex-direction:column;
 
-padding:15px;
+overflow:hidden;
 
-box-shadow:0 15px 40px rgba(0,0,0,0.7);
-
+border:1px solid rgba(255,255,255,0.08);
 }
 
-.chatbot input{
+.chat-header{
+background:#2563eb;
+padding:12px;
+font-weight:bold;
+text-align:center;
+}
 
-width:100%;
+#chat-box{
+flex:1;
+padding:12px;
+overflow-y:auto;
+font-size:14px;
+}
 
+.chat-input-area{
+display:flex;
+border-top:1px solid rgba(255,255,255,0.08);
+}
+
+#chat-input{
+flex:1;
 padding:10px;
-
 border:none;
+background:#020617;
+color:white;
+}
 
-border-radius:5px;
-
-margin-top:10px;
-
+.chat-input-area button{
+background:#3b82f6;
+border:none;
+color:white;
+padding:10px 14px;
+cursor:pointer;
 }
 
 /* =========================
