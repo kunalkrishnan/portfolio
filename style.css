@@ -491,3 +491,55 @@ animation:blink 1s infinite;
 50%{opacity:0;}
 100%{opacity:1;}
 }
+/* =========================
+ETL PIPELINE
+========================= */
+
+.etl-pipeline{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+}
+
+.etl-node{
+background:rgba(15,23,42,0.85);
+padding:15px;
+border-radius:12px;
+text-align:center;
+width:120px;
+
+border:1px solid rgba(255,255,255,0.08);
+
+transition:0.3s;
+}
+
+.etl-node:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,0.6);
+}
+
+.etl-node img{
+width:50px;
+margin-bottom:8px;
+}
+
+.arrow{
+font-size:26px;
+color:#60a5fa;
+font-weight:bold;
+}
+
+.layer{
+display:block;
+font-size:11px;
+margin-top:3px;
+padding:2px 5px;
+border-radius:4px;
+}
+
+.bronze{background:#92400e}
+.silver{background:#6b7280}
+.gold{background:#ca8a04}
