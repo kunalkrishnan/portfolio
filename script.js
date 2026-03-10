@@ -263,30 +263,34 @@ observer.observe(section);
 ARCHITECTURE IMAGE ROTATOR
 ========================= */
 
-const architectureImages = [
+document.addEventListener("DOMContentLoaded", function(){
+
+const images = [
 "assets/bg1.jpeg",
 "assets/bg2.jpeg",
 "assets/bg3.jpeg",
 "assets/bg4.jpeg"
 ];
 
-let architectureIndex = 0;
-
-setInterval(function(){
+let index = 0;
 
 const img = document.getElementById("architectureImage");
 
 if(!img) return;
 
-architectureIndex++;
+setInterval(function(){
 
-if(architectureIndex >= architectureImages.length){
-architectureIndex = 0;
+index++;
+
+if(index >= images.length){
+index = 0;
 }
 
-img.src = architectureImages[architectureIndex];
+img.src = images[index];
 
-}, 4000); // change every 4 seconds
+}, 4000);
+
+});
 // ============================
 // AI CHATBOT
 // ============================
@@ -440,35 +444,3 @@ toggleBtn.innerHTML = "+";
 
 });
 
-/* =========================
-ARCHITECTURE IMAGE ROTATOR
-========================= */
-
-document.addEventListener("DOMContentLoaded", function(){
-
-const images = [
-"assets/bg1.jpeg",
-"assets/bg2.jpeg",
-"assets/bg3.jpeg",
-"assets/bg4.jpeg"
-];
-
-let index = 0;
-
-const img = document.getElementById("architectureImage");
-
-if(!img) return;
-
-setInterval(function(){
-
-index++;
-
-if(index >= images.length){
-index = 0;
-}
-
-img.src = images[index];
-
-}, 4000);
-
-});
