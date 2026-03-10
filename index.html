@@ -13,14 +13,13 @@
 
 <body>
 
-<!-- PARTICLE BACKGROUND -->
-<div id="particles"></div>
+<!-- NAVBAR -->
 
-<nav>
+<nav class="navbar">
 
-<h2>Kunal Krishnan</h2>
+<div class="logo">Kunal Krishnan</div>
 
-<div>
+<div class="nav-links">
 <a href="#about">About</a>
 <a href="#clients">Clients</a>
 <a href="#skills">Skills</a>
@@ -32,9 +31,12 @@
 
 </nav>
 
-<!-- HERO -->
 
-<section class="hero">
+<!-- HERO SECTION -->
+
+<header class="hero">
+
+<div class="hero-content">
 
 <img src="assets/kunal.jpg" class="profile">
 
@@ -42,38 +44,51 @@
 
 <h2 class="typing"></h2>
 
-<p>Consultant at Capgemini | Ex-Infosys | 5+ Years Experience</p>
+<p>
+Consultant at Capgemini | Ex-Infosys | 5+ Years Experience
+</p>
 
-<div>
+<div class="hero-buttons">
 
 <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+
 <a href="mailto:kunalkrishnan966@gmail.com" class="btn">Email</a>
+
 <a href="tel:9914182048" class="btn">Call</a>
+
 <a href="https://www.linkedin.com/in/kunal-krishnan-a0a792137/" target="_blank" class="btn">LinkedIn</a>
 
 </div>
 
-</section>
+</div>
+
+</header>
+
 
 <!-- ABOUT -->
 
-<section id="about">
+<section id="about" class="section">
 
 <h2>About Me</h2>
 
-<p>
+<p class="section-text">
+
 Azure Data Engineer with 5+ years experience designing scalable cloud
 data platforms and enterprise ETL pipelines using Azure Data Factory,
 Databricks, PySpark and Delta Lake.
+
 </p>
 
 </section>
 
+
 <!-- CLIENTS -->
 
-<section id="clients">
+<section id="clients" class="section">
 
 <h2>Client Experience</h2>
+
+<div class="card-grid">
 
 <div class="card">
 
@@ -85,8 +100,6 @@ Databricks, PySpark and Delta Lake.
 Worked on data engineering solutions supporting the modernization
 of the European Road Network connecting 700+ stations across 45 countries.
 </p>
-
-<p><b>Technologies:</b> Azure Data Factory, Databricks, PySpark, Delta Lake</p>
 
 </div>
 
@@ -101,8 +114,6 @@ Built distributed data pipelines processing railway logistics
 and operational data for analytics.
 </p>
 
-<p><b>Technologies:</b> Azure Data Factory, Databricks, PySpark, SQL</p>
-
 </div>
 
 <div class="card">
@@ -116,61 +127,78 @@ Working on enterprise data replication and analytics platforms
 using Fivetran HVR and Azure Data Factory.
 </p>
 
-<p><b>Technologies:</b> Fivetran HVR, Azure Data Factory, Databricks</p>
+</div>
 
 </div>
 
 </section>
+
 
 <!-- SKILLS -->
 
-<section id="skills">
+<section id="skills" class="section">
 
 <h2>Technical Skills</h2>
 
-<div class="skills">
+<div class="skills-grid">
 
-<a href="https://learn.microsoft.com/en-us/azure/data-factory/" target="_blank">Azure Data Factory</a>
-<a href="https://learn.microsoft.com/en-us/azure/databricks/" target="_blank">Databricks</a>
-<a href="https://delta.io/" target="_blank">Delta Lake</a>
-<a href="https://learn.microsoft.com/en-us/power-bi/" target="_blank">Power BI</a>
-<a href="https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction" target="_blank">ADLS Gen2</a>
+<span>Azure Data Factory</span>
+<span>Databricks</span>
+<span>Delta Lake</span>
+<span>PySpark</span>
+<span>Power BI</span>
+<span>ADLS Gen2</span>
 
 </div>
 
 </section>
+
 
 <!-- PROJECTS -->
 
-<section id="projects">
+<section id="projects" class="section">
 
 <h2>Projects</h2>
 
-<div class="project">
+<div class="card-grid">
+
+<div class="card">
 
 <h3>Oracle → ADLS Medallion Migration</h3>
 
-<p>Enterprise migration implementing Bronze, Silver, Gold architecture.</p>
+<p>
+Enterprise migration implementing Bronze, Silver, Gold architecture.
+</p>
 
-<a href="https://github.com/kunalkrishnan/oracle-to-adls-medallion-migration" target="_blank">View Project</a>
+<a href="https://github.com/kunalkrishnan/oracle-to-adls-medallion-migration" target="_blank">
+View Project
+</a>
 
 </div>
 
-<div class="project">
+
+<div class="card">
 
 <h3>Azure Data Engineering Platform</h3>
 
-<p>ADF → Databricks → Delta Lake → Synapse → Power BI</p>
+<p>
+ADF → Databricks → Delta Lake → Synapse → Power BI
+</p>
 
-<a href="https://github.com/kunalkrishnan/azure-data-engineering-platform" target="_blank">View Project</a>
+<a href="https://github.com/kunalkrishnan/azure-data-engineering-platform" target="_blank">
+View Project
+</a>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- DATA PIPELINE -->
 
-<section id="architecture">
+<!-- PIPELINE -->
+
+<section id="architecture" class="section">
 
 <h2>Data Engineering Pipeline</h2>
 
@@ -188,140 +216,79 @@ using Fivetran HVR and Azure Data Factory.
 
 </section>
 
-<!-- LIVE DATA PIPELINE -->
-
-<section>
-
-<h2>Live Data Pipeline Simulation</h2>
-
-<div class="etl-pipeline">
-
-<div class="etl-node">
-<img src="assets/oracle.png">
-<p>Oracle DB</p>
-</div>
-
-<div class="arrow">→</div>
-
-<div class="etl-node">
-<img src="assets/sqlserver.png">
-<p>SQL Server</p>
-</div>
-
-<div class="arrow">→</div>
-
-<div class="etl-node">
-<img src="assets/api.png">
-<p>REST API</p>
-</div>
-
-<div class="arrow">→</div>
-
-<div class="etl-node">
-<img src="assets/adf.png">
-<p>Azure Data Factory</p>
-</div>
-
-<div class="arrow">→</div>
-
-<div class="etl-node">
-<img src="assets/adls.png">
-<p>ADLS Gen2</p>
-<span class="layer bronze">Bronze</span>
-<span class="layer silver">Silver</span>
-<span class="layer gold">Gold</span>
-</div>
-
-<div class="arrow">→</div>
-
-<div class="etl-node">
-<img src="assets/databricks.png">
-<p>Databricks Notebook</p>
-</div>
-
-<div class="arrow">→</div>
-
-<div class="etl-node">
-<img src="assets/synapse.png">
-<p>Azure Synapse</p>
-</div>
-
-<div class="arrow">→</div>
-
-<div class="etl-node">
-<img src="assets/powerbi.png">
-<p>Power BI</p>
-</div>
-
-</div>
-
-</section>
 
 <!-- CLOUD ARCHITECTURE -->
 
-<section id="cloud-architecture">
+<section class="section">
 
 <h2>Cloud Data Architecture</h2>
 
 <div class="architecture-container">
+
 <img id="architectureImage" src="assets/bg1.jpeg">
+
 </div>
 
 </section>
+
 
 <!-- BLOG -->
 
-<section id="blog">
+<section id="blog" class="section">
 
 <h2>Data Engineering Articles</h2>
 
-<div class="blog-container">
+<div class="card-grid">
 
-<div class="blog-card">
+<div class="card">
 <h3>Medallion Architecture</h3>
 <p>Understanding Bronze, Silver and Gold layers.</p>
-<a href="blogs/medallion.html">Read Article</a>
 </div>
 
-<div class="blog-card">
+<div class="card">
 <h3>Delta Lake Optimization</h3>
 <p>Partitioning, Z-Order and performance tuning.</p>
-<a href="blogs/delta.html">Read Article</a>
 </div>
 
-<div class="blog-card">
+<div class="card">
 <h3>ADF Pipeline Design</h3>
 <p>Building scalable Azure Data Factory pipelines.</p>
-<a href="blogs/adf.html">Read Article</a>
 </div>
 
 </div>
 
 </section>
 
+
 <!-- CONTACT -->
 
-<section id="contact">
+<section id="contact" class="section">
 
 <h2>Contact</h2>
 
 <div class="card">
 
 <p>Email: kunalkrishnan966@gmail.com</p>
+
 <p>Phone: +91 9914182048</p>
+
 <p>Location: Samastipur, Bihar</p>
 
 </div>
 
 </section>
 
-<!-- CHATBOT -->
+
+<!-- AI CHATBOT -->
 
 <div id="chatbot-container">
 
 <div id="chatbot-header">
+
 <span>🤖 Data Engineering Assistant</span>
+
 <button id="chatbot-toggle">—</button>
+
 </div>
 
 <div id="chatbot-body">
@@ -329,13 +296,17 @@ using Fivetran HVR and Azure Data Factory.
 <div id="chat-box"></div>
 
 <div class="chat-input-area">
+
 <input id="chat-input" placeholder="Ask about Azure, Databricks, ETL...">
+
 <button onclick="sendMessage()">➤</button>
-</div>
 
 </div>
 
 </div>
+
+</div>
+
 
 <script src="script.js"></script>
 
