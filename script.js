@@ -160,10 +160,10 @@ observer.observe(section);
 // ============================
 
 const images = [
-"assets/bg1.jpg",
-"assets/bg2.jpg",
-"assets/bg3.jpg",
-"assets/bg4.jpg"
+"assets/bg1.jpeg",
+"assets/bg2.jpeg",
+"assets/bg3.jpeg",
+"assets/bg4.jpeg"
 ];
 
 let imgIndex = 0;
