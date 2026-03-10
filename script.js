@@ -294,47 +294,32 @@ imgIndex = 0;
 // AI CHATBOT
 // ============================
 
-function sendMessage(){
+async function sendMessage(){
 
 const input = document.getElementById("chat-input");
-
 const chatBox = document.getElementById("chat-box");
 
-if(!input || !chatBox) return;
+const userMessage = input.value;
 
-let userText = input.value;
+if(!userMessage) return;
 
-chatBox.innerHTML += "<p><b>You:</b> "+userText+"</p>";
-
-let response = "";
-
-if(userText.toLowerCase().includes("azure")){
-
-response = "Azure Data Factory and Databricks are core services used for building data pipelines.";
-
-}
-
-else if(userText.toLowerCase().includes("databricks")){
-
-response = "Databricks uses Apache Spark for distributed data processing.";
-
-}
-
-else if(userText.toLowerCase().includes("delta")){
-
-response = "Delta Lake provides ACID transactions and data reliability for data lakes.";
-
-}
-
-else{
-
-response = "This portfolio showcases Azure Data Engineering projects and architectures.";
-
-}
-
-chatBox.innerHTML += "<p><b>Assistant:</b> "+response+"</p>";
+chatBox.innerHTML += `<p><b>You:</b> ${userMessage}</p>`;
 
 input.value = "";
+
+const response = await fetch("/api/chat",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({message:userMessage})
+});
+
+const data = await response.json();
+
+chatBox.innerHTML += `<p><b>AI:</b> ${data.reply}</p>`;
+
+chatBox.scrollTop = chatBox.scrollHeight;
 
 }
 
